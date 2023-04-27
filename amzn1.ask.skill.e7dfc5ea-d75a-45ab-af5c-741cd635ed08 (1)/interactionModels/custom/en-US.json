@@ -1,0 +1,450 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "doctor prompter",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "HearAllTopicsIntent",
+          "slots": [],
+          "samples": [
+            "can i hear topics",
+            "list of topics"
+          ]
+        },
+        {
+          "name": "CheckAnswerIntent",
+          "slots": [
+            {
+              "name": "answer",
+              "type": "answer"
+            }
+          ],
+          "samples": [
+            "I think it is {answer}",
+            "This answer is {answer}",
+            "{answer}"
+          ]
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello world"
+          ]
+        },
+        {
+          "name": "StudyOneTopicIntent",
+          "slots": [
+            {
+              "name": "topic",
+              "type": "topic"
+            }
+          ],
+          "samples": [
+            "study {topic}",
+            "{topic}"
+          ]
+        },
+        {
+          "name": "StudyEverythingIntent",
+          "slots": [],
+          "samples": [
+            "everything",
+            "all topics",
+            "study everything"
+          ]
+        },
+        {
+          "name": "ResetGameIntent",
+          "slots": [],
+          "samples": [
+            "reset the game",
+            "reset game"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "toxicology"
+              }
+            },
+            {
+              "name": {
+                "value": "reproduction"
+              }
+            },
+            {
+              "name": {
+                "value": "pulmonology"
+              }
+            },
+            {
+              "name": {
+                "value": "pharmacology"
+              }
+            },
+            {
+              "name": {
+                "value": "neurology"
+              }
+            },
+            {
+              "name": {
+                "value": "nephrology"
+              }
+            },
+            {
+              "name": {
+                "value": "musculoskeletal"
+              }
+            },
+            {
+              "name": {
+                "value": "hematology"
+              }
+            },
+            {
+              "name": {
+                "value": "gastroenterology"
+              }
+            },
+            {
+              "name": {
+                "value": "cardiology"
+              }
+            },
+            {
+              "name": {
+                "value": "anatomy"
+              }
+            }
+          ],
+          "name": "topic"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "42"
+              }
+            },
+            {
+              "name": {
+                "value": "high-flow oxygen"
+              }
+            },
+            {
+              "name": {
+                "value": "naloxone"
+              }
+            },
+            {
+              "name": {
+                "value": "acetaminophen toxicity",
+                "synonyms": [
+                  "acetaminophen"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "N-acetylcysteine",
+                "synonyms": [
+                  "NAC"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "i don\u0027t know",
+                "synonyms": [
+                  "skip",
+                  "no clue"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "oxalic acid"
+              }
+            },
+            {
+              "name": {
+                "value": "Pap smear"
+              }
+            },
+            {
+              "name": {
+                "value": "E7"
+              }
+            },
+            {
+              "name": {
+                "value": "E6"
+              }
+            },
+            {
+              "name": {
+                "value": "16, 18, 31, 33",
+                "synonyms": [
+                  "16, 18, 31 \u0026 33",
+                  "16 18 31 33"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Progesterone"
+              }
+            },
+            {
+              "name": {
+                "value": "magnesium sulfate"
+              }
+            },
+            {
+              "name": {
+                "value": "alpha-fetoprotein",
+                "synonyms": [
+                  "AFP"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "7"
+              }
+            },
+            {
+              "name": {
+                "value": "Serotonin and norepinephrine reuptake inhibitors",
+                "synonyms": [
+                  "SNRIs"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "potassium",
+                "synonyms": [
+                  "K"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "sulfa drugs ",
+                "synonyms": [
+                  "NRTIs",
+                  "protease inhibitors"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "carbonic anhydrase"
+              }
+            },
+            {
+              "name": {
+                "value": "Liver"
+              }
+            },
+            {
+              "name": {
+                "value": "Multiple sclerosis",
+                "synonyms": [
+                  "MS"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Hyponatremia"
+              }
+            },
+            {
+              "name": {
+                "value": "Subarachnoid hemorrhage"
+              }
+            },
+            {
+              "name": {
+                "value": "4",
+                "synonyms": [
+                  "IV",
+                  "4th"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Streptococcus pneumoniae",
+                "synonyms": [
+                  "strep pnemo",
+                  "strep"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Amyotrophic Lateral Sclerosis",
+                "synonyms": [
+                  "als",
+                  "A.L.S.",
+                  "Lou Gerhig\u0027s Disease",
+                  "ALS"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "metabolic acidosis"
+              }
+            },
+            {
+              "name": {
+                "value": "fibroblast growth factor receptor 3",
+                "synonyms": [
+                  "F.G.F.R.3.",
+                  "FGFR3"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "beta"
+              }
+            },
+            {
+              "name": {
+                "value": "Diamond-Blackfan anemia"
+              }
+            },
+            {
+              "name": {
+                "value": "Transferrin"
+              }
+            },
+            {
+              "name": {
+                "value": "calcium and ADP",
+                "synonyms": [
+                  "calcium ADP",
+                  "ADP calcium",
+                  "ADP and calcium"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Escherichia coli",
+                "synonyms": [
+                  "E. coli"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Chron\u0027s disease"
+              }
+            },
+            {
+              "name": {
+                "value": "left atrium"
+              }
+            },
+            {
+              "name": {
+                "value": "S4"
+              }
+            },
+            {
+              "name": {
+                "value": "hemosiderin-laden macrophages"
+              }
+            },
+            {
+              "name": {
+                "value": "Staphylococcus epidermidis"
+              }
+            },
+            {
+              "name": {
+                "value": "axilla"
+              }
+            },
+            {
+              "name": {
+                "value": "Lateral anterior descending",
+                "synonyms": [
+                  "L.A.D.",
+                  "LAD"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "metastasis"
+              }
+            },
+            {
+              "name": {
+                "value": "T4"
+              }
+            },
+            {
+              "name": {
+                "value": "medial circumflex femoral artery"
+              }
+            },
+            {
+              "name": {
+                "value": "L3-L5",
+                "synonyms": [
+                  "L3 through L5",
+                  "L3 to L5"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "C4",
+                "synonyms": [
+                  "level C4",
+                  "C. four",
+                  "c. four"
+                ]
+              }
+            }
+          ],
+          "name": "answer"
+        }
+      ]
+    }
+  },
+  "version": "10"
+}
